@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','App\Http\Controllers\PostController@index');
+Route::get('/','App\Http\Controllers\PostController@index') -> name('welcome');
+Route::get('/posts/{id}','App\Http\Controllers\PostController@show') -> whereNumber('id');
+Route::get('/contactez-nous','App\Http\Controllers\PostController@contact') -> name('contact');
 
 // Route::get('articles', function (){
 //     return view('articles');

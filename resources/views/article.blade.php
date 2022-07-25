@@ -5,7 +5,7 @@
     <h1>Liste des Articles</h1>
 
         @foreach($posts as $post)
-            <h3>{{ $post }}</h3>
+            <h1>{{ $post }}</h1>
         @endforeach 
 
 @endsection

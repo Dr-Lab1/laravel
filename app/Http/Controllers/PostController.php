@@ -15,4 +15,23 @@ class PostController extends Controller
         ];
         return view('articles', compact('posts'));
     }
+
+    public function show ($id)
+    {
+        $posts = [
+            1 => 'Mon titre numero 1',
+            2 => 'Mon titre numero 2'
+        ];
+
+        $post = $posts[$id] ?? 'Pas de titre !';
+
+        return view('article', [
+            'post' => $post
+        ]);
+    }
+
+    public function contact ()
+    {
+        return view('contact');
+    }
 }
