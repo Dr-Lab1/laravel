@@ -24,3 +24,6 @@
 
    Launch laragon, open your browser. Enter in the URLs the name of your folder followed by a period then test
    => _folderName.test_
+
+
+3.
