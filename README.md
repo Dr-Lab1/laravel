@@ -1,4 +1,4 @@
-# laravel INSTALL #
+# laravel INSTALLATION #
 
 1. Install Laravel
    
@@ -26,4 +26,3 @@
    => _folderName.test_
 
 
-__
